@@ -22,6 +22,10 @@ Bootstrap(app)
 MY_EMAIL = os.environ.get("MY_EMAIL")
 MY_PASSWORD = os.environ.get("MY_PASSWORD")
 TO_EMAIL = os.environ.get("TO_EMAIL")
+print(os.environ.get("FLASK_APP_ID"))
+print(MY_EMAIL)
+print(MY_PASSWORD)
+print(TO_EMAIL)
 gravatar = Gravatar(app, size=100, rating='g', default='retro', force_default=False, force_lower=False, use_ssl=False, base_url=None)
 ##CONNECT TO DB
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///blog.db'
